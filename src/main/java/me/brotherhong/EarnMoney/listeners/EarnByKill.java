@@ -68,9 +68,9 @@ public class EarnByKill implements Listener {
 
     private void sendActionBarMessage(Player player, double amount, String mobName) {
         String text = message;
-        text = text.replaceAll("&", "§");
-        text = text.replaceAll("<money>", economy.format(amount));
-        text = text.replaceAll("<mob>", mobName);
+        text = text.replace("&", "§");
+        text = text.replace("<money>", economy.format(amount));
+        text = text.replace("<mob>", mobName);
         player.spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText(text));
     }
 

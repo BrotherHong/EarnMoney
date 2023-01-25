@@ -61,7 +61,7 @@ public class EarnByHarvest implements Listener {
 
         if (!cropPrices.containsKey(type)) return;
 
-        String cropName = type.toString().toLowerCase().replaceAll("_", " ");
+        String cropName = type.toString().toLowerCase().replace("_", " ");
 
         if (maxAgeCrops.contains(type)) {
             Ageable ageable = (Ageable) block.getBlockData();
@@ -146,9 +146,9 @@ public class EarnByHarvest implements Listener {
 
     private void sendActionBarMessage(Player player, double amount, String cropName) {
         String text = message;
-        text = text.replaceAll("&", "§");
-        text = text.replaceAll("<money>", economy.format(amount));
-        text = text.replaceAll("<crop>", cropName);
+        text = text.replace("&", "§");
+        text = text.replace("<money>", economy.format(amount));
+        text = text.replace("<crop>", cropName);
         player.spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText(text));
     }
 

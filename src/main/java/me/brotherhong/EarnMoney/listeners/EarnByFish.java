@@ -63,7 +63,7 @@ public class EarnByFish implements Listener {
 
         EconomyResponse response = economy.depositPlayer(player, reward);
         if (response.transactionSuccess()) {
-            sendActionBarMessage(player, response.amount, type.toString().toLowerCase().replaceAll("_", " "));
+            sendActionBarMessage(player, response.amount, type.toString().toLowerCase().replace("_", " "));
         }
 
     }
@@ -79,9 +79,9 @@ public class EarnByFish implements Listener {
 
     private void sendActionBarMessage(Player player, double amount, String caughtName) {
         String text = message;
-        text = text.replaceAll("&", "§");
-        text = text.replaceAll("<money>", economy.format(amount));
-        text = text.replaceAll("<caught>", caughtName);
+        text = text.replace("&", "§");
+        text = text.replace("<money>", economy.format(amount));
+        text = text.replace("<caught>", caughtName);
         player.spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText(text));
     }
 

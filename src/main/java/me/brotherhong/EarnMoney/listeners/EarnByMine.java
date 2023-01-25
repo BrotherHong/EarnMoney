@@ -48,7 +48,7 @@ public class EarnByMine implements Listener {
 
         EconomyResponse response = economy.depositPlayer(player, orePrices.get(block.getType()));
         if (response.transactionSuccess()) {
-            String oreName = block.getType().toString().toLowerCase().replaceAll("_", " ");
+            String oreName = block.getType().toString().toLowerCase().replace("_", " ");
             sendActionBarMessage(player, response.amount, oreName);
         }
     }
@@ -78,9 +78,9 @@ public class EarnByMine implements Listener {
 
     private void sendActionBarMessage(Player player, double amount, String oreName) {
         String text = message;
-        text = text.replaceAll("&", "§");
-        text = text.replaceAll("<money>", economy.format(amount));
-        text = text.replaceAll("<ore>", oreName);
+        text = text.replace("&", "§");
+        text = text.replace("<money>", economy.format(amount));
+        text = text.replace("<ore>", oreName);
         player.spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText(text));
     }
 
