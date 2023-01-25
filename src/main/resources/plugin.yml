@@ -1,0 +1,11 @@
+name: EarnMoney
+version: '${project.version}'
+main: me.brotherhong.EarnMoney.EarnMoney
+api-version: 1.19
+softdepend: [ Vault ]
+authors: [ BrotherHong ]
+description: Do some works to earn money!
+
+commands:
+  earnmoney:
+    aliases: [ em ]

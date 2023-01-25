@@ -1,0 +1,93 @@
+# kill mob to earn
+mob:
+  enabled: true
+  message: "&cKill&fTo&eEarn &7>> Earned &e<money> &7for killing &c<mob>"
+  friendly: 1.0
+  hostile:
+    BLAZE: 10.0
+    CAVE_SPIDER: 10.0
+    CREEPER: 10.0
+    DROWNED: 10.0
+    ELDER_GUARDIAN: 10.0
+    ENDER_DRAGON: 10.0
+    ENDERMAN: 10.0
+    ENDERMITE: 10.0
+    EVOKER: 10.0
+    GHAST: 10.0
+    GUARDIAN: 10.0
+    HOGLIN: 10.0
+    HUSK: 10.0
+    ILLUSIONER: 10.0
+    MAGMA_CUBE: 10.0
+    PHANTOM: 10.0
+    PIGLIN: 10.0
+    PIGLIN_BRUTE: 10.0
+    PILLAGER: 10.0
+    RAVAGER: 10.0
+    SHULKER: 10.0
+    SILVERFISH: 10.0
+    SKELETON: 10.0
+    SLIME: 10.0
+    SPIDER: 10.0
+    STRAY: 10.0
+    VEX: 10.0
+    VINDICATOR: 10.0
+    WARDEN: 10.0
+    WITCH: 10.0
+    WITHER: 10.0
+    WITHER_SKELETON: 10.0
+    ZOGLIN: 10.0
+    ZOMBIE: 10.0
+    ZOMBIE_VILLAGER: 10.0
+    ZOMBIFIED_PIGLIN: 10.0
+
+# mine to earn
+mine:
+  enabled: true
+  message: "&6Mine&fTo&eEarn &7>> Earned &e<money> &7for mining &6<ore>"
+  ores:
+    COAL_ORE: 1.0
+    DEEPSLATE_COAL_ORE: 1.0
+    COPPER_ORE: 1.0
+    DEEPSLATE_COPPER_ORE: 1.0
+    RAW_COPPER_BLOCK: 5.0
+    IRON_ORE: 10.0
+    DEEPSLATE_IRON_ORE: 10.0
+    RAW_IRON_BLOCK: 50.0
+    LAPIS_ORE: 5.0
+    DEEPSLATE_LAPIS_ORE: 5.0
+    GOLD_ORE: 50.0
+    DEEPSLATE_GOLD_ORE: 50.0
+    REDSTONE_ORE: 30.0
+    DEEPSLATE_REDSTONE_ORE: 30.0
+    DIAMOND_ORE: 100.0
+    DEEPSLATE_DIAMOND_ORE: 100.0
+    EMERALD_ORE: 300.0
+    DEEPSLATE_EMERALD_ORE: 300.0
+    NETHER_GOLD_ORE: 50.0
+    NETHER_QUARTZ_ORE: 5.0
+
+# harvest to earn
+harvest:
+  enabled: true
+  message: "&aHarvest&fTo&eEarn &7>> Earned &e<money> &7for harvesting &a<crop>"
+  crops:
+    WHEAT: 10.0
+    CARROTS: 10.0
+    POTATOES: 10.0
+    NETHER_WART: 10.0
+    COCOA: 10.0
+    BEETROOTS: 10.0
+    SUGAR_CANE: 10.0
+    PUMPKIN: 10.0
+    MELON: 10.0
+
+# fish to earn
+fish:
+  enabled: true
+  message: "&bFish&fTo&eEarn &7>> Earned &e<money> &7for fishing up &b<caught>"
+  caughts:
+    # trash: trash or fish
+    trash: 1.0
+    treasure: 10.0
+
