@@ -45,7 +45,7 @@ public class EarnByHarvest implements Listener {
         maxAgeCrops.add(Material.POTATOES);
         maxAgeCrops.add(Material.COCOA);
         maxAgeCrops.add(Material.NETHER_WART);
-        maxAgeCrops.add(Material.BEETROOT);
+        maxAgeCrops.add(Material.BEETROOTS);
 
         blockCrops.add(Material.SUGAR_CANE);
         blockCrops.add(Material.PUMPKIN);
